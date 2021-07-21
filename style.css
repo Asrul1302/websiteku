@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* All */
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.about .about-content,
+.services .services-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Header */
+
+.header {
+    background: #c00f0f;
+    color: #fff;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+}
+
+.header-list {
+    text-align: center;
+}
+
+.header-list ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+.header-list ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.header-list ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-list ul li a:hover {
+    color: black;
+}
+
+.active,
+.header-list ul li:hover {
+    background: #ee8d8d;
+    color: black;
+    border-radius: 0;
+}
+
+.header-list .fas {
+    margin-right: 8px;
+    color: #fff;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.header-list ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #da6363;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.header-list ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.header-list ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.header-list ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.header-list ul li:hover .sub-menu-1 ul li a:hover {
+    color: black;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #da6363;
+}
+
+
+/* Home */
+
+.home {
+    display: flex;
+    background: url("img/banner.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 25px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: #c00f0f;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: #c00f0f;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #c00f0f;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: #c00f0f;
+    background: #fff;
+    border: 2px solid #c00f0f;
+}
+
+
+/* About */
+
+.about .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: #c00f0f;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: #c00f0f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #c00f0f;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: #c00f0f;
+    background: #fff;
+}
+
+
+/* Services */
+
+.services {
+    color: #fff;
+    background: #111;
+}
+
+.services .services-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover {
+    background: crimson;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.services .services-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover .box {
+    transform: scale(1.1);
+}
+
+.services .services-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .services-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.services .services-content .card:hover i {
+    color: #fff;
+}
+
+
+/* skills */
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3 ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: crimson;
+    background: none;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .skills-content .right .line {
+    height: 10px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 90%;
+}
+
+.skills-content .right .js::before {
+    width: 80%;
+}
+
+.skills-content .right .php::before {
+    width: 80%;
+}
+
+.skills-content .right .mysql::before {
+    width: 90%;
+}
+
+
+/* contact */
+
+.contact {
+    color: #fff;
+    background: #111;
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 600;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #fff;
+}
+
+.contact .contact-content form .fields {
+    display: flex;
+}
+
+.contact .contact-content form .field,
+.contact .contact-content form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .contact-content form .field input,
+.contact .contact-content form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+.contact .contact-content form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .contact-content form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.contact .contact-content form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-content form .button button:hover {
+    color: crimson;
+    background: #fff;
+}
+
+
+/* footer */
+
+footer {
+    background: #c00f0f;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: #111;
+}
+
+footer span a:hover {
+    text-decoration: none;
+    color: #fff;
+}
